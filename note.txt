@@ -1,2 +1,8 @@
 47 box-sizing
 56 quy đổi đơn vị
+89.10 margin vs flex item
+85 calc
+65 text-shadow
+51. inline
+89.3 algin items
+87.6 position sticky
