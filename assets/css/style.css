@@ -1,17 +1,20 @@
-* {
-  box-sizing: border-box;
-}
 html {
-  font-size: 62.5%; /*10px*/
+  font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", san-serif;
 }
-/*=======================common=======================*/
+/*================== common ==================*/
 a {
   text-decoration: none;
-  cursor: pointer;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn {
   display: inline-block;
@@ -22,44 +25,36 @@ a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  border-radius: 24.5px;
-  background-color: #171100;
+  border-radius: 999px;
+  background: #171100;
 }
-.main-content {
-  width: 1170px;
-
-  max-width: calc(100% - 48px);
-  margin-left: auto;
-  margin-right: auto;
-}
-/*=======================header=======================*/
+/*================== header ==================*/
 .header {
-  background-color: #fffcf4;
-}
-.header.fixed {
-  position: sticky;
-  top: -28px;
+  background: #fffcf4;
 }
 .header .body {
   display: flex;
   align-items: center;
   padding: 36px 0 8px;
 }
-.nav {
-  margin-left: auto;
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -28px;
 }
 .nav ul {
   display: flex;
 }
+.nav {
+  margin-left: auto;
+}
 .nav a {
-  position: relative;
   color: #5f5b53;
   font-size: 1.6rem;
-  padding: 8px 21px; /*==trên dưới 8 phải trái 21 ===*/
+  padding: 8px 21px;
 }
 .nav a:hover {
   color: #171100;
-  /* font-weight: 600; */
   text-shadow: 1px 0 0 currentColor;
 }
 .header .btn-sign-up {
