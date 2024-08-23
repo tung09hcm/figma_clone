@@ -284,6 +284,7 @@ a {
   display: flex;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
@@ -338,4 +339,59 @@ a {
 .popular .course-item .info .foot .btn:hover {
   background-color: #fea31b;
   cursor: pointer;
+}
+/*================== feedback ==================*/
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: #2e2100;
+}
+.feedback .feedback-item {
+  display: flex;
+}
+.feedback .feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading-);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+}
+.feedback-item .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
 }
